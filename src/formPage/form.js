@@ -20,7 +20,7 @@ const UserForm=()=>{
             formData.append('Author',Author)
             formData.append('Location',Location)
             formData.append('Description',Description);	
-            await fetch('https://instaclone-backend-project.onrender.com/data"/form', {method:'post',body:formData}).then((res)=>res.json()).then((data)=>{console.log(data);}).catch((e)=>console.log(e))
+            await fetch('https://instaclone-backend-project.onrender.com/form', {method:'post',body:formData}).then((res)=>res.json()).then((data)=>{console.log(data);}).catch((e)=>console.log(e))
         }catch(e){
            console.log(e) 
         }
