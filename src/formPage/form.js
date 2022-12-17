@@ -15,13 +15,13 @@ const UserForm=()=>{
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-         const formData = new FormData();
+        try{ const formData = new FormData();
             formData.append('file',img)
             formData.append('Author',Author)
             formData.append('Location',Location)
             formData.append('Description',Description);	
 
-            try{   await axios('https://instaclone-backend-project.onrender.com/form',
+               await axios('https://instaclone-backend-project.onrender.com/form',
             {method:'post',body:formData}).then((res)=>res.json()).then((data)=>{console.log(data);}).catch((e)=>console.log(e))
         }catch(e){
            console.log(e) 
