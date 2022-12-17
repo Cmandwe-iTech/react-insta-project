@@ -1,0 +1,26 @@
+.header{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 10%;
+    width: 50%;
+    box-shadow: 3px 3px gray;
+    margin: 5px auto ;
+}
+.insta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.icon-img{
+    height: 50px;
+   width: 50px;
+   margin: auto 10px;
+}
+.cam-icon{
+    height: 50px;
+   width: 50px;
+   margin:  20px; 
+}
