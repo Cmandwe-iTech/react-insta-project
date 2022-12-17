@@ -15,7 +15,7 @@ const UserForm=()=>{
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        try{ const formData = new FormData();
+         const formData = new FormData();
             formData.append('file',img)
             formData.append('Author',Author)
             formData.append('Location',Location)
@@ -23,9 +23,7 @@ const UserForm=()=>{
 
             await axios('https://instaclone-backend-project.onrender.com/form',
             {method:'post',body:formData}).then((res)=>res.json()).then((data)=>{console.log(data);}).catch((e)=>console.log(e))
-        }catch(e){
-           console.log(e) 
-        }
+       
         navigate('/postview',{ replace: true })
 	}
     return(
