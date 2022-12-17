@@ -3,11 +3,12 @@ import ThreeDot from "../Images/threeDot.png"
 import Likes from "../Images/likes.png"
 import Share from "../Images/share.png"
 import '../styles/post.css'
+import axios from "axios";
 
 const Posts = () => {
     const [userData, setUserData] = useState([])
     useEffect(() => {
-        fetch("https://instaclone-backend-project.onrender.com/data").then((res) => {
+        axios("https://instaclone-backend-project.onrender.com/data").then((res) => {
             return res.json()
         }).then((data) => {
             setUserData(data)
