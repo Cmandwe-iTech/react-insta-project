@@ -22,7 +22,7 @@ const UserForm=()=>{
             formData.append('Description',Description);	
 
             await axios('https://instaclone-backend-project.onrender.com/form',
-            {method:'post',body:formData}).then((res)=>res.json()).then((data)=>{console.log(data);}).catch((e)=>console.log(e))
+            {method:'post',body:formData}).then((res)=>res.json()).then((data)=>{console.log(data)}).catch((e)=>console.log(e))
        
         navigate('/postview',{ replace: true })
 	}
