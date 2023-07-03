@@ -8,7 +8,7 @@ import "../styles/post.css";
 const Posts = () => {
   const [userData, setUserData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8000/data")
+    fetch("https://instaclone-xopm.onrender.com/data")
       .then((res) => {
         return res.json();
       })
