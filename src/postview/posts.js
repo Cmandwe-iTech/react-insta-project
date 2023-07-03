@@ -8,7 +8,7 @@ import "../styles/post.css";
 const Posts = () => {
   const [userData, setUserData] = useState([]);
   useEffect(() => {
-    fetch("https://instaclone-xopm.onrender.com/data")
+    fetch("https://instagram-3slu.onrender.com/data")
       .then((res) => {
         return res.json();
       })
