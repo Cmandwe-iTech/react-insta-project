@@ -21,7 +21,7 @@ const UserForm=()=>{
             formData.append('Location',Location)
             formData.append('Description',Description);	
 
-            await axios('https://instaclone-backend-project.onrender.com/form',
+            await axios('http://localhost:8000/form',
             {
                 method:'post',
                 data:formData
